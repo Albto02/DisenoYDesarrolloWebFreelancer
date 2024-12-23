@@ -8,11 +8,15 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", serif;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 .titulo{
     text-align: center;
     font-size: 3.8rem;
@@ -55,4 +59,12 @@ body{
 .navegacion-principal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
 }
